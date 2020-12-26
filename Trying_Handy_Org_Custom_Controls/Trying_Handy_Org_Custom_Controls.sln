@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30323.103
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trying_Handy_Org_Custom_Controls", "Trying_Handy_Org_Custom_Controls\Trying_Handy_Org_Custom_Controls.csproj", "{CFAA5047-E059-4D44-BAB4-347F27D9738D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFAA5047-E059-4D44-BAB4-347F27D9738D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFAA5047-E059-4D44-BAB4-347F27D9738D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFAA5047-E059-4D44-BAB4-347F27D9738D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFAA5047-E059-4D44-BAB4-347F27D9738D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {438D9FBA-FCA2-45A8-99EC-12C597726BC1}
+	EndGlobalSection
+EndGlobal
