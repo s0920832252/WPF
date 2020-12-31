@@ -7,11 +7,11 @@
 * [HandyControl package](https://github.com/HandyOrg/HandyControl)
     * 目前流行的 UI 套件 *HandyControl*
       * WaveProgressBar
-        * ![](readmeImage\waveProgressBar.PNG)
+        * ![](readmeImage/waveProgressBar.PNG)
       * CircleProgressBar
-        * ![](readmeImage\circleProgrssBar.PNG)
+        * ![](readmeImage/circleProgrssBar.PNG)
       * Gravatar
-        * ![](readmeImage\grave.PNG)
+        * ![](readmeImage/grave.PNG)
 * WPF .net Core 的 ProgressBar
     * ProgressBar 的 Value 在使用上 , 目前(.Net Core 3.1)有精確度的問題. 
       * e.g. 28 在顯示上可能會變成 28.00000000
