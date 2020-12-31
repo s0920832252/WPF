@@ -1,0 +1,40 @@
+﻿<Window x:Class="Trying_Handy_Org_Custom_Controls.View.LoadCircleProgressBar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:converter="clr-namespace:Trying_Handy_Org_Custom_Controls.Converter"
+        mc:Ignorable="d"
+        Title="LoadCircleProgressBar" Height="400" Width="300" 
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None"
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <converter:BoolToNegativeBoolConverter x:Key="BoolToNegativeBoolConverter"/>
+    </Window.Resources>
+
+    <Grid Background="#FF222222"
+          hc:WindowAttach.IsDragElement="True">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0">
+            <TextBlock Name="Tbk"  Text="Running..." FontSize="30" HorizontalAlignment="Center" 
+                       Foreground="White"/>
+            <hc:CircleProgressBar Value="{Binding Value}" 
+                                  Minimum="{Binding MinValue}"
+                                  Maximum="{Binding MaxValue}"
+                                  Width="200"
+                                  Height="200"
+                                  Margin="5 45"
+                                  />
+            <Button Name="Btn"
+                    Content="Start"
+                    HorizontalAlignment="Stretch"
+                    Foreground="White" 
+                    Background="#FF563380"
+                    BorderBrush="#FF4E2480"
+                    IsEnabled="{Binding IsRunning,Converter={StaticResource BoolToNegativeBoolConverter}}"
+                    Command="{Binding Command}"/> 
+        </StackPanel>
+    </Grid>
+</Window>

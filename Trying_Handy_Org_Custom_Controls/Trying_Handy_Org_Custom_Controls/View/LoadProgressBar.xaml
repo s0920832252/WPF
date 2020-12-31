@@ -1,0 +1,99 @@
+﻿<Window x:Class="Trying_Handy_Org_Custom_Controls.View.LoadProgressBar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trying_Handy_Org_Custom_Controls.View"
+        xmlns:converter="clr-namespace:Trying_Handy_Org_Custom_Controls.Converter"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        mc:Ignorable="d"
+        Title="LoadProgressBar" Height="450" Width="300"
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Window.Resources>
+        <converter:BoolToNegativeBoolConverter x:Key="BoolToNegativeBoolConverter"/>
+     </Window.Resources>
+
+    <Grid Background="#FF222222"
+          hc:WindowAttach.IsDragElement="True">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0">
+        <TextBlock Name="Tbk"  Text="Running..." FontSize="30" HorizontalAlignment="Center" 
+                   Foreground="White"/>
+        <ProgressBar           
+                Value="{Binding Value}"
+                Width="200"
+                Height="20"
+                Margin="5 5"
+            />
+            <ProgressBar          
+                Value="{Binding Value}"
+                Width="200"
+                Height="20"
+                Margin="5 5" Style="{DynamicResource ProgressBarDanger}"
+            />            
+            <ProgressBar          
+                Value="{Binding Value}"
+                Width="200"
+                Height="20"
+                Margin="5 5" Style="{DynamicResource ProgressBarFlat}"
+            /> 
+            <ProgressBar          
+                Value="{Binding Value}"
+                Width="200"
+                Height="20"
+                Margin="5 5" Style="{DynamicResource ProgressBarFlat4ProgressButton}"
+            /> 
+            <ProgressBar          
+                Value="{Binding Value}"
+                Width="200"
+                Height="20"
+                Margin="5 5" Style="{DynamicResource ProgressBarInfo}"
+            />
+            <ProgressBar          
+                Value="{Binding Value}"
+                Width="200"
+                Height="20"
+                Margin="5 5" Style="{DynamicResource ProgressBarInfoStripe}"
+            />      
+            <ProgressBar          
+                Value="{Binding Value}"
+                Width="200"
+                Height="20"
+                Margin="5 5" Style="{DynamicResource ProgressBarPrimaryStripe}" 
+            />
+            <ProgressBar          
+                Value="{Binding Value}"
+                Width="200"
+                Height="20"
+                Margin="5 5,5,5" Style="{DynamicResource ProgressBarSuccessStripe}"
+            />    
+            <ProgressBar          
+                Value="{Binding Value}"
+                Width="200"
+                Height="20"
+                Margin="5 5,5,5" Style="{DynamicResource ProgressBarWarningStripe}"
+            /> 
+            <ProgressBar          
+                Value="{Binding Value}"
+                Width="200"
+                Height="20"
+                Margin="5 5,5,5" Style="{DynamicResource ProgressBarWarning}"
+            />
+            <ProgressBar          
+                Value="{Binding Value}"
+                Width="200"
+                Height="20"
+                Margin="5 5,5,10" Style="{StaticResource ProgressBarSuccess}"
+            />
+            <Button Name="Btn"
+                    Content="Start"
+                    HorizontalAlignment="Stretch"
+                    Foreground="White" 
+                    Background="#FF563380"
+                    BorderBrush="#FF4E2480"
+                    IsEnabled="{Binding IsRunning,Converter={StaticResource BoolToNegativeBoolConverter}}"
+                    Command="{Binding Command}"/>
+        </StackPanel>
+    </Grid>
+</Window>
