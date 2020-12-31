@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using Trying_Handy_Org_Custom_Controls.View;
 
 namespace Trying_Handy_Org_Custom_Controls
 {
@@ -23,6 +11,37 @@ namespace Trying_Handy_Org_Custom_Controls
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void LoadWaveProgressBarBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            new LoadWaveProgressBar().Show();
+        }
+
+        private void LoadCircleProgressBarBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            new LoadCircleProgressBar().Show();
+        }
+
+        private void LoadGravatarBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            new LoadGravatar().Show();
+        }
+
+        private void LoadProgressBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            new LoadProgressBar().Show();
+        }
+
+        private void CloseBtn_OnClick(object sender, RoutedEventArgs e)
+        {
+            foreach (Window currentWindow in Application.Current.Windows)
+            {
+                if (currentWindow != this)
+                {
+                    currentWindow.Close();
+                } 
+            }
         }
     }
 }

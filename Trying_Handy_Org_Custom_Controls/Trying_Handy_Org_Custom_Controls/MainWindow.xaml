@@ -3,10 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Trying_Handy_Org_Custom_Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="MainWindow" Height="300" Width="300">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Name="LoadWaveProgressBarBtn" Content="LoadWaveProgressBar" Click="LoadWaveProgressBarBtn_OnClick"/>
+        <Button Name="LoadCircleProgressBarBtn" Content="LoadCircleProgressBar" Click="LoadCircleProgressBarBtn_OnClick"/>
+        <Button Name="LoadGravatarBtn" Content="LoadGravatar" Click="LoadGravatarBtn_OnClick"/>
+        <Button Name="LoadProgressBtn" Content="LoadProgressBar" Click="LoadProgressBtn_OnClick"/> 
+        <Button Name="CloseBtn" Content="CloseAll" Click="CloseBtn_OnClick"/>
+    </StackPanel>
 </Window>
