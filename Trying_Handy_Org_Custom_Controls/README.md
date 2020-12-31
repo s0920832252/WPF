@@ -7,15 +7,29 @@
 * [HandyControl package](https://github.com/HandyOrg/HandyControl)
     * 目前流行的 UI 套件 *HandyControl*
       * WaveProgressBar
+        * ![](readmeImage\waveProgressBar.PNG)
       * CircleProgressBar
+        * ![](readmeImage\circleProgrssBar.PNG)
       * Gravatar
-      * Progress
+        * ![](readmeImage\grave.PNG)
+* WPF .net Core 的 ProgressBar
+    * ProgressBar 的 Value 在使用上 , 目前(.Net Core 3.1)有精確度的問題. 
+      * e.g. 28 在顯示上可能會變成 28.00000000
+      * 實際使用上可能需要 override 其 ControllTemplate 
+      * 或者選擇 , 預設不顯示數值的 Style , 例如
+        * ProgressBarFlat
+        * ProgressBarFlat4ProgressButton
+        * ProgressBarInfoStripe
+        * ProgressBarPrimaryStripe
+        * ProgressBarSuccessStripe
+        * ProgressBarWarningStripe
+      * 範例圖
+        * ![](readmeImage\progressBar.PNG)
 * MVVM 架構
     * Mdoel
     * View
     * ViewModel
     * Command
-* 
 
 ### 參考資源
 [手把手教你如何使用HandyControl，一款开源WPF控件神器](https://blog.csdn.net/qqwe13/article/details/85227311)
