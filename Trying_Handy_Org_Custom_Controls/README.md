@@ -24,7 +24,7 @@
         * ProgressBarSuccessStripe
         * ProgressBarWarningStripe
       * 範例圖
-        * ![](readmeImage\progressBar.PNG)
+        * ![](readmeImage/progressBar.PNG)
 * MVVM 架構
     * Mdoel
     * View
