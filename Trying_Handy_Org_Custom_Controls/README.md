@@ -47,3 +47,5 @@
 [HandyControl package](https://github.com/HandyOrg/HandyControl)
 
 [WPF自定义进度条](https://www.twblogs.net/a/5c109f1ebd9eee5e41837ecb?lang=zh-cn)
+
+[WPF ProgressBar - binding progress value to display on the bar](https://stackoverflow.com/questions/22519884/wpf-progressbar-binding-progress-value-to-display-on-the-bar)
