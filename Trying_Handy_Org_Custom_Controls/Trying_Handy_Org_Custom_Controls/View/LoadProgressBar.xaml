@@ -8,92 +8,81 @@
         xmlns:hc="https://handyorg.github.io/handycontrol"
         mc:Ignorable="d"
         Title="LoadProgressBar" Height="450" Width="300"
-        WindowStartupLocation="CenterScreen" 
+        WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         ResizeMode="NoResize">
     <Window.Resources>
-        <converter:BoolToNegativeBoolConverter x:Key="BoolToNegativeBoolConverter"/>
-     </Window.Resources>
+        <converter:BoolToNegativeBoolConverter x:Key="BoolToNegativeBoolConverter" />
+    </Window.Resources>
 
     <Grid Background="#FF222222"
           hc:WindowAttach.IsDragElement="True">
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0">
-        <TextBlock Name="Tbk"  Text="Running..." FontSize="30" HorizontalAlignment="Center" 
-                   Foreground="White"/>
-        <ProgressBar           
+            <TextBlock Name="Tbk" Text="Running..." FontSize="30" HorizontalAlignment="Center"
+                       Foreground="White" />
+            <ProgressBar
                 Value="{Binding Value}"
                 Width="200"
                 Height="20"
-                Margin="5 5"
-            />
-            <ProgressBar          
+                Margin="5 5" />
+            <ProgressBar
                 Value="{Binding Value}"
                 Width="200"
                 Height="20"
-                Margin="5 5" Style="{DynamicResource ProgressBarDanger}"
-            />            
-            <ProgressBar          
+                Margin="5 5" Style="{DynamicResource ProgressBarDanger}" />
+            <ProgressBar
                 Value="{Binding Value}"
                 Width="200"
                 Height="20"
-                Margin="5 5" Style="{DynamicResource ProgressBarFlat}"
-            /> 
-            <ProgressBar          
+                Margin="5 5" Style="{DynamicResource ProgressBarFlat}" />
+            <ProgressBar
                 Value="{Binding Value}"
                 Width="200"
                 Height="20"
-                Margin="5 5" Style="{DynamicResource ProgressBarFlat4ProgressButton}"
-            /> 
-            <ProgressBar          
+                Margin="5 5" Style="{DynamicResource ProgressBarFlat4ProgressButton}" />
+            <ProgressBar
                 Value="{Binding Value}"
                 Width="200"
                 Height="20"
-                Margin="5 5" Style="{DynamicResource ProgressBarInfo}"
-            />
-            <ProgressBar          
+                Margin="5 5" Style="{DynamicResource ProgressBarInfo}" />
+            <ProgressBar
                 Value="{Binding Value}"
                 Width="200"
                 Height="20"
-                Margin="5 5" Style="{DynamicResource ProgressBarInfoStripe}"
-            />      
-            <ProgressBar          
+                Margin="5 5" Style="{DynamicResource ProgressBarInfoStripe}" />
+            <ProgressBar
                 Value="{Binding Value}"
                 Width="200"
                 Height="20"
-                Margin="5 5" Style="{DynamicResource ProgressBarPrimaryStripe}" 
-            />
-            <ProgressBar          
+                Margin="5 5" Style="{DynamicResource ProgressBarPrimaryStripe}" />
+            <ProgressBar
                 Value="{Binding Value}"
                 Width="200"
                 Height="20"
-                Margin="5 5,5,5" Style="{DynamicResource ProgressBarSuccessStripe}"
-            />    
-            <ProgressBar          
+                Margin="5 5,5,5" Style="{DynamicResource ProgressBarSuccessStripe}" />
+            <ProgressBar
                 Value="{Binding Value}"
                 Width="200"
                 Height="20"
-                Margin="5 5,5,5" Style="{DynamicResource ProgressBarWarningStripe}"
-            /> 
-            <ProgressBar          
+                Margin="5 5,5,5" Style="{DynamicResource ProgressBarWarningStripe}" />
+            <ProgressBar
                 Value="{Binding Value}"
                 Width="200"
                 Height="20"
-                Margin="5 5,5,5" Style="{DynamicResource ProgressBarWarning}"
-            />
-            <ProgressBar          
+                Margin="5 5,5,5" Style="{DynamicResource ProgressBarWarning}" />
+            <ProgressBar
                 Value="{Binding Value}"
                 Width="200"
                 Height="20"
-                Margin="5 5,5,10" Style="{StaticResource ProgressBarSuccess}"
-            />
+                Margin="5 5,5,10" Style="{StaticResource ProgressBarSuccess}" />
             <Button Name="Btn"
                     Content="Start"
                     HorizontalAlignment="Stretch"
-                    Foreground="White" 
+                    Foreground="White"
                     Background="#FF563380"
                     BorderBrush="#FF4E2480"
                     IsEnabled="{Binding IsRunning,Converter={StaticResource BoolToNegativeBoolConverter}}"
-                    Command="{Binding Command}"/>
+                    Command="{Binding Command}" />
         </StackPanel>
     </Grid>
 </Window>
