@@ -11,7 +11,7 @@
 WPF (.Net Core ) 目前剛推出不久
 所以就趁著這次的機會好好的回憶一波 WPF 吧 , 並且玩玩看 WPF (.Net Core ) 
 
-雖然目前沒有支援跨平台的計畫Q_Q
+雖然目前沒有支援跨平台的計畫Q_Q     
 [Roadmap](https://github.com/dotnet/wpf/blob/master/roadmap.md)       
 [Is WPF going to be cross platform in .NET 5](https://www.reddit.com/r/dotnet/comments/bmq1py/is_wpf_going_to_be_cross_platform_in_net_5/)
 
