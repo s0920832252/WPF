@@ -8,8 +8,13 @@
 但以前點過的技能就這樣遺忘了 , 似乎也不好.
 雖然以前似乎也沒有用到很熟練啦 ~~~~ ORZ
 
-WPF (.Net Core ) 目前剛推出不久 , 看了一下 [Roadmap](https://github.com/dotnet/wpf/blob/master/roadmap.md) , 未來應該可能大概會支援跨平台.!???
+WPF (.Net Core ) 目前剛推出不久
 所以就趁著這次的機會好好的回憶一波 WPF 吧 , 並且玩玩看 WPF (.Net Core ) 
+
+雖然目前沒有支援跨平台的計畫Q_Q
+[Roadmap](https://github.com/dotnet/wpf/blob/master/roadmap.md) , 
+[Is WPF going to be cross platform in .NET 5](https://www.reddit.com/r/dotnet/comments/bmq1py/is_wpf_going_to_be_cross_platform_in_net_5/)
+
 
 我目前打算使參考這位 Youtuber [Design com WPF](https://www.youtube.com/c/DesigncomWPF/videos) 的影片 , 
 由他的影片最後的結果 , 延伸去做一些練習.
