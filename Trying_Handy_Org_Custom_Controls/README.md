@@ -13,18 +13,15 @@
       * Gravatar
         * ![](readmeImage/grave.PNG)
 * WPF .net Core 的 ProgressBar
-    * ProgressBar 的 Value 在使用上 , 目前(.Net Core 3.1)有精確度的問題. 
-      * e.g. 28 在顯示上可能會變成 28.00000000
-      * 實際使用上可能需要 override 其 ControllTemplate 
-      * 或者選擇 , 預設不顯示數值的 Style , 例如
-        * ProgressBarFlat
-        * ProgressBarFlat4ProgressButton
-        * ProgressBarInfoStripe
-        * ProgressBarPrimaryStripe
-        * ProgressBarSuccessStripe
-        * ProgressBarWarningStripe
-      * 範例圖
-        * ![](readmeImage/progressBar.PNG)
+   * 預設不顯示數值的 Style , 例如
+     * ProgressBarFlat
+     * ProgressBarFlat4ProgressButton
+     * ProgressBarInfoStripe
+     * ProgressBarPrimaryStripe
+     * ProgressBarSuccessStripe
+     * ProgressBarWarningStripe
+   * 範例圖
+     * ![](readmeImage/progressBar.PNG)
 * MVVM 架構
     * Mdoel
     * View
